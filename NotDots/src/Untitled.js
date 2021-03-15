@@ -36,7 +36,7 @@ var gameScene = new Phaser.Scene('Dots'); //main scene
         gameScene.create = function () {
             this.cameras.main.setBackgroundColor(16777215);
             graphics = this.add.graphics();
-            this.load.image('bowser', 'bowser.jpg');
+            this.load.image('bowser', './bowser.jpg');
             var s = this.add.image(100, 100, 'bowser');
             grid = new DotGrid(config.columns, config.rows); //create grid and add phsyics 
             grid.getAllDots().forEach(function (dot) {
